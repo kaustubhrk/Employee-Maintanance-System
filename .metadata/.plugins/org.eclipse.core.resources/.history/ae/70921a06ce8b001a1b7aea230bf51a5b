@@ -1,0 +1,37 @@
+package com.cg.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeCoontroller {
+
+	
+	
+	@GetMapping(value = "/login")
+	public String login() {
+		return "logged in";
+	}
+	
+	@PostMapping(value = "/add")
+	public String addEmployee() {
+		return "Employee Added";
+	}
+	
+	@GetMapping(value = "/list")
+	public String viewAllEmployee() {
+		return "List";
+	}
+	
+	@GetMapping(value = "/delete")
+	public String deleteEmployee() {
+		return "Deleted";
+	}
+	
+	@PostMapping(value = "/modify")
+	public String modifyEmployee() {
+		return "Modified";
+	}
+	
+}

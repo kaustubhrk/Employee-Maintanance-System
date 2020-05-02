@@ -1,0 +1,136 @@
+package com.cg.model;
+
+import java.time.LocalDate;
+
+public class EmployeeModel {
+
+	
+	private int eid;
+	private String fname;
+	private String lname;
+	private LocalDate DOJ;
+	private LocalDate DOB;
+	private String pass;
+	private Grade grade;
+	private Gender gender;
+	private float salary;
+	private MaritalStatus maritalStatus;
+	private int managerId;
+
+	public int getManagerId() {
+		return managerId;
+	}
+
+	public void setManagerId(int managerId) {
+		this.managerId = managerId;
+	}
+
+	public Grade getGrade() {
+		return grade;
+	}
+
+	public void setGrade(Grade grade) {
+		this.grade = grade;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public MaritalStatus getMaritalStatus() {
+		return maritalStatus;
+	}
+
+	public void setMaritalStatus(MaritalStatus maritalStatus) {
+		this.maritalStatus = maritalStatus;
+	}
+
+	// private Employee manager;
+
+	public int geteid() {
+		return eid;
+	}
+
+	public void seteid(int eid) {
+		this.eid = eid;
+	}
+
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public LocalDate getDOJ() {
+		return DOJ;
+	}
+
+	public void setDOJ(LocalDate dOJ) {
+		DOJ = dOJ;
+	}
+
+	public LocalDate getDOB() {
+		return DOB;
+	}
+
+	public void setDOB(LocalDate dOB) {
+		DOB = dOB;
+	}
+
+	public float getSalary() {
+		return salary;
+	}
+
+	public void setSalary(float salary) {
+		this.salary = salary;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public Employee() {
+
+	}
+
+	public Employee(int eid, String fname, String lname, LocalDate dOJ, LocalDate dOB, String pass, Grade grade,
+			Gender gender, float salary, MaritalStatus maritalStatus) {
+		super();
+		this.eid = eid;
+		this.fname = fname;
+		this.lname = lname;
+		DOJ = dOJ;
+		DOB = dOB;
+		this.grade = grade;
+		this.gender = gender;
+		this.salary = salary;
+		this.maritalStatus = maritalStatus;
+		this.pass = pass;
+
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", fname=" + fname + ", lname=" + lname + ", DOJ=" + DOJ + ", DOB=" + DOB
+				+ ", pass=" + pass + ", grade=" + grade + ", gender=" + gender + ", salary=" + salary
+				+ ", maritalStatus=" + maritalStatus + "]";
+	}
+}

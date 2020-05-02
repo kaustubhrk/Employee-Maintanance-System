@@ -1,0 +1,5 @@
+package com.cg.ems.model;
+
+public enum Gender {
+	Male, Female
+}

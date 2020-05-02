@@ -1,0 +1,5 @@
+package com.cg.ems.model;
+
+public enum MaritalStatus {
+	Single, Married, Divorced, Separated, Widowed
+}
